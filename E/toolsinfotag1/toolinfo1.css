@@ -1,0 +1,83 @@
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+#frame{
+    width: 250px;
+    height: 330px;
+    background-image: url("./tooljpg/tool1.jpg");
+    background-size: cover;
+}
+#tittle{
+    position:relative;
+    margin-left: 280px;
+    margin-top: -340px;
+}
+#detail{
+    position:relative;
+    margin-left: 280px;
+}
+.bkicon{
+    width: 100%;
+    height: 100%;
+}
+#sb1{
+    position: relative;
+    margin-top: 50px;
+}
+#sb2{
+    position: relative;
+    margin-top: -75px;
+    margin-left: 70px;
+}
+#sb3{
+    position: relative;
+    margin-top: -75px;
+    margin-left: 140px;
+}
+#tag{
+    position: relative;
+    margin-top: -65px;
+    margin-left: 280px;
+}
+#price{
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 280px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 8px;
+}
+#add{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 400px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+}
+#fb{
+    position: relative;
+    font-weight: bold;
+    margin-top: -200px;
+    margin-left: 280px;
+}
+#feedback{
+    position: relative;
+    margin-left: 280px;
+}
+#send{
+    position: absolute;
+    background-color: aquamarine;
+    border: thin;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: -50px;
+    margin-top: 127px;
+    font-weight: bold;
+}

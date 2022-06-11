@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="HandhelFriendly" content="true"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips</title>
+    <link rel="icon" href="./hinhepro/logopng.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- <script type="text/javascript" src="epro.js"></script> -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .noidung{
+            width: 100%;
+            margin-top: 297px;
+            
+        }
+        .sup1{
+            position: relative;
+            width: 100%;
+            height: 790px;
+            float: left;
+            background: url(./hinhepro/3.22.jpg);
+            background-size: cover;
+        }
+        .end {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            float: left;
+            
+        }
+        .endd{
+            display: flex;
+            left:20%;
+            padding-top: 15px ;
+            width: 25%;
+            color: #ffffff;
+            float: left;
+            justify-content:space-around;
+        }
+        .endd a{
+            font-size:50px;
+            color: #ffff
+        }
+        .endd a:hover{
+            
+            color: rgb(0, 255, 21);
+            text-decoration: none;
+        }
+        .col{
+            width: 30%;
+            height: 778px;
+            background: #D9D9D9;
+            float: left;
+        }
+        .col-1{
+           
+            width: 70%;
+            float: left;
+        }
+       
+        .col b{
+            
+            height: 234px;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #000000;
+        }
+        .col p{
+            height: 523px;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+        }
+        
+        .col-2, .col-6, .col-10, .col-15{
+            width: 50%;
+            height: 433px;
+            float: left;
+            
+            background: rgba(22, 158, 0, 0.75);
+        }
+        .col-2 b, .col-6 b, .col-10 b {
+            height: 40%;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+        }
+        .col-2 p, .col-6 p, .col-10 p, .col-15 p{
+            
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+        }
+        .col-3{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.2.jpeg);
+            background-size: cover;
+        }
+        .col-4{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.3.jpeg);
+            background-size: cover;
+        }
+        .col-5, .col-9, .col-12, .col-17{
+            width: 50%;
+            height: 433px;
+            background: #D9D9D9;
+            float: left;
+        }
+        .col-5 b , .col-15 b {
+            width: 75%;
+            height: 50%;
+            margin:0 auto;
+            text-align: center;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            
+
+            color: #000000;
+
+        }
+        .col-5 p, .col-9 p, .col-12 p ,.col-17 p{
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: rgba(0, 0, 0, 0.8);
+
+
+        }
+        
+        .col-7{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.6.jpg);
+            background-size: cover;
+        }
+        .col-8{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.9.jpg);
+            background-size: cover;
+        }
+        
+        .col-9 b , .col-12 b {
+            width: 85%;
+            height: 40%;
+            margin:0 auto;
+            text-align: center;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+        .col-11{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.10.jpg);
+            background-size: cover;
+        }
+        .col-13{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.11.jpg);
+            background-size: cover;
+        }
+        .col-14{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.12.jpeg);
+            background-size: cover;
+        }
+        .col-15 b{
+            width: 100%;
+           
+            margin:0 auto;
+            text-align: center;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            
+
+            color: #ffffff;
+
+        }
+        .col-16{
+            width: 50%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.15.jpg);
+            background-size: cover;
+        }
+        .col-17 b{
+            width: 100%;
+            height: 50%;
+            margin:0 auto;
+            text-align: center;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            
+
+            color: #000000;
+        }
+        .col-18{
+            width: 25%;
+            height: 866px;
+            float: left;
+            background: #D9D9D9;
+        }
+        .col-18 b{
+            width: 100%;
+           height: 50%;
+           margin:0 auto;
+           text-align: center;
+           font-family: 'Inria Sans';
+           font-style: normal;
+           font-weight: 400;
+           font-size: 55px;
+           line-height: 72px;
+           display: flex;
+           align-items: center;
+           
+
+           color: #000000;
+        }
+        .col-18 p{
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: rgba(0, 0, 0, 0.8);
+
+        }
+        .col-19{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.16.jpg);
+            background-size: cover;
+        }
+        .col-20{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.17.jpg);
+            background-size: cover;
+        }
+        .col-21{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.18.jpeg);
+            background-size: cover;
+        }
+        .col-22{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.19.jpg);
+            background-size: cover;
+        }
+        .col-23{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.20.jpg);
+            background-size: cover;
+        }
+        .col-24{
+            width: 25%;
+            height: 433px;
+            float: left;
+            background: url(./hinhepro/3.21.jpeg);
+            background-size: cover;
+        }
+        
+        
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        
+        <div id="logo">
+            <div class="textlogo">
+                <span>G</span>
+                <span>A</span>
+                <span>R</span>
+                <span class="png"><img src="./hinhepro/png.png" alt=""></span>
+                <span>E</span>
+                <span>N</span>
+            </div>
+            
+            <div class="mymenu" id="menu">
+                <a href="index.html">HOME</a>
+                <a href="">Tips</a>
+                <a href="Tools.html">Tools</a>
+                <a href="Decor.html">Decor</a>
+                <a href="about.html">Abouts</a>
+            </div>
+
+            <div id="giohang">
+                <a class="aa" href="#"><i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal"
+                        data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
+                <a class="a" href="#"><i id="up" class="glyphicon glyphicon-user"></i></a>
+            </div>
+            <!-- <div class="responsive ">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> -->   
+        </div>
+        <div class="noidung">
+            
+                <div class="col">
+                    <b >Tips For A Balcony Garden</b>
+                    <p >Preparing our space, but more improtantly , preparing our mind is the key to a successful and fruitful vegetable season. If you want to see balcony vegetable garden up close head over to this video!</p>
+                </div>
+                <div class="col-1"><iframe  width="100%" height="773" src="https://www.youtube.com/embed/YF2iQAGA5Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            
+            
+            <div class="col-2">
+                <b>Be Sure To Check The Rules And Regulations For Your Building</b>
+                    <p>The weight of the pots full of soil plus water and last but not least but not least the plant itself. <br>
+                        You can use lightweight containers made from plastic,fiberglass,or fabric grow bags combined with lightweight soil mixes. <br>
+                        If your balcony can endure heavy load,you can use wooden raised beds to use your space more efficient.</p>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-4"></div>
+            <div class="col-5">
+                <b>Calulate The Time You Have</b>
+                <p>Maintenance is important, even in a small garden.The is only one simple rule: If you don’t have time, grow low maintenance vegetables.But even they still need more care. <br>
+                    Even if your balcony is big, We still recommend starting small and slow</p>
+            </div>
+            <div class="col-6">
+                <b>Choosing The Right Plants For Your Balcony Is The Most Important Thing</b>
+                    <p>There are three most important factors:sunlight , the wind and the heatAlso obviously, choose the right vegetables according to the season.
+                        That most vegetables need a minimum of 6 to 8 hours of sun a day.Lots of flowers, and most veggies, if kept well watered, will love it there.
+                        Also there are vegetables that prefer more sunlight but can grow in shade - they will grow slower.</p>
+            </div>
+            <div class="col-7"></div>
+            <div class="col-8"></div>
+            <div class="col-9">
+                <b>Set A Budget Before You Begin</b>
+                    <p>Dont’t Just bye ready-to-plant vegetables unless you want to spent a fortune.Buy seeds or ask friends or gardeners in your community to share seeds. 
+                        Try to find sale pots or DIY your container.
+                         The only thing you need to spend good money on is quality potting soil.Regular ”dirt” is not sterile and bring disease and problems.
+                         A balcony vegetable garden with a few pots may not be very expensive , it also totally depends on what you want.</p>
+            </div>
+            <div class="col-10">
+                <b>YOU'LL NEED A PLAN IN ADVANCE</b>
+                    <p>Vegetables that fruit from a blossom, such as cucumbers, tomatoes, peppers, and squash don't like shady areas.
+                     Plant these in full sun areas that receive the most direct sunlight per day.
+                     Root vegetables such as beets, carrots and potatoes can also grow in partially shaded areas with less direct sunlight, but appreciate at least half a day of full sun and some partial shade.</p>
+            </div>
+            <div class="col-11"></div>
+            <div class="col-12">
+                <b>HEALTHY SOIL IS KEY FOR GROWING STRONG</b>
+                    <p>Soil is alive and made up of many parts, including mineral particles, water, organic matter, air, and microorganisms. The balance between these parts is what needs to be sustained for a healthy garden. <br>
+                        Just like all living things, soil needs to be fed in order to provide a nourishing environment to grow your vegetables.</p>
+            </div>
+            <div class="col-13"></div>
+            <div class="col-14"></div>
+            <div class="col-15">
+                <b> GERMINATING INDOOR & USE MINI GREENHOUSE FOR SOWING EARLY</b>
+                        <p>With cold weather , in order to harvest early in July, it is also necessary to germinate early. 
+                            If you have a greenhouse, some types of vegetables can be sown at the end of February, mid-March: carrots, pakchoi, some herbs...
+                            When the night temperature is above 10 ° C, seed can be sown outdoors. That way you can have way more crop than usual!</p>
+            </div>
+            <div class="col-16"></div>
+            <div class="col-17">
+                <b> POLYCULTURE IS THE HEALTHY WAY OF VEGETABLE GARDENING</b>
+                        <p>Growing several or multiple crops of different plants in the same area gives you greater returns and less work.
+                             All plants will boost the other's development splendidly and even protect each other from pests if choose the companion plant carefully.</p>
+            </div>
+            <div class="col-18">
+                <b>ROTATE CROPS EACH YEAR</b>
+                <p>Planting crops in different soil every year prevents the depletion of nutrients and interrupts the cycles of pests and diseases so the garden soil stays healthy. </p>
+            </div>
+            <div class="col-19"></div>
+            <div class="col-20"></div>
+            <div class="col-21"></div>
+            <div class="col-22"></div>
+            <div class="col-23"></div>
+            <div class="col-24"></div>
+            
+           
+        </div>
+        <div class="sup1">
+            <div>
+                <b>SUBSCRIBE</b>
+                <p>Subscribe with your gmail to receive news and updates</p>
+                <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
+                <button type="sub" id="sub">GET</button><br></div>
+                <textarea name="" id="" placeholder="       Comment"></textarea><br>
+                <button class="post" id="post">Post</button>
+            </div>
+        </div>
+        <div class="end">
+            <div class="endd"><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-youtube-play" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href="">in</a></div>
+        </div>
+        
+
+        <section id="in">
+            <input id="email" type="text" placeholder="  Email"><br><br>
+            <input id="password" type="password" placeholder="  Password"><br><br>
+            <button type="submit" id="submit">Confirm</button><br><br>
+            <a href="login.html">Create New Accout</a>
+        </section>
+        
+    </div>
+    
+    <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
+    <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
+
+    <script src="epro.js"></script>
+
+    <!-- backtop -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sw = true;
+            $(window).scroll(function () {
+                if (sw) {
+                    sw = false;
+                    setTimeout(function () {
+
+                        if ($(this).scrollTop() != 0) {
+                            $('#backtop').show();
+                            sw = true;
+                        } else {
+                            $('#backtop').hide();
+                            sw = true;
+                        }
+
+                    }, 200);
+                }
+            });
+            $('#backtop').click(function () {
+
+                window.scrollTo(0, 0);
+                return false;
+            });
+        });
+    </script>
+    <script>
+
+        $('#up').click(function () {
+            $("section").toggle(500);
+        })
+
+    </script>
+    
+</body>
+
+</html>

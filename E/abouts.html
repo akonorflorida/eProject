@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="HandhelFriendly" content="true"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abouts</title>
+    <link rel="icon" href="./hinhepro/logopng.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- <script type="text/javascript" src="epro.js"></script> -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			text-shadow: darkgray 2px 2px 2px;
+			text-align: left;
+			color: red;
+		}
+		form{
+			width: 90%;
+		}
+
+
+
+		/* input[type="text"],
+		input[type="email"],
+		select {
+			margin: .2em;
+			padding: .2em;
+			width: 200px;
+			font-size: 1.1em;
+		} */
+
+
+		input:required {
+			border-bottom: thin solid palevioletred;
+			border-top: thin dotted gray;
+			border-right: thin dotted gray;
+			border-left: thin dotted gray;
+		}
+        .noidung{
+            width: 100%;
+            margin-top: 297px;
+            
+        }
+        .sup1{
+            position: relative;
+            width: 100%;
+            height: 790px;
+            float: left;
+            background: url(./hinhepro/3.22.jpg);
+            background-size: cover;
+        }
+        .end {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            float: left;
+            
+        }
+        .endd{
+            display: flex;
+            left:20%;
+            padding-top: 15px ;
+            width: 25%;
+            color: #ffffff;
+            float: left;
+            justify-content:space-around;
+        }
+        .endd a{
+            font-size:50px;
+            color: #ffff
+        }
+        .endd a:hover{
+            
+            color: rgb(0, 255, 21);
+            text-decoration: none;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        
+        <div id="logo">
+            <div class="textlogo">
+                <span>G</span>
+                <span>A</span>
+                <span>R</span>
+                <span class="png"><img src="./hinhepro/png.png" alt=""></span>
+                <span>E</span>
+                <span>N</span>
+            </div>
+            
+            <div class="mymenu" id="menu">
+                <a href="index.html">HOME</a>
+                <a href="tips.html">Tips</a>
+                <a href="tools.html">Tools</a>
+                <a href="decor.html">Decor</a>
+                <a href="">Abouts</a>
+            </div>
+
+            <div id="giohang">
+                <a class="aa" href="#"><i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal"
+                        data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
+                <a class="a" href="#"><i id="up" class="glyphicon glyphicon-user"></i></a>
+            </div>
+            <!-- <div class="responsive ">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> -->   
+        </div>
+        <div class="noidung">
+            Well, this page is created to help people have a better view of planting trees,improving their lives.Planting trees is also a good thing to contribute to protecting the environment, relaxing the mind after stressful working hours.We may not have too many options, what you really want, but hopefully we can help you in some way.If you have an idea, please share it with us! We will e happy to hear from you!
+                
+        </div>
+        <div class="sup1">
+            <div>
+                <b>SUBSCRIBE</b>
+                <p>Subscribe with your gmail to receive news and updates</p>
+                <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
+                <button type="sub" id="sub">GET</button><br></div>
+                <textarea name="" id="" placeholder="       Comment"></textarea><br>
+                <button class="post" id="post">Post</button>
+            </div>
+        </div>
+        <div class="end">
+            <div class="endd"><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-youtube-play" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href="">in</a></div>
+        </div>
+        
+
+        <section id="in">
+            <input id="email" type="text" placeholder="  Email"><br><br>
+            <input id="password" type="password" placeholder="  Password"><br><br>
+            <button type="submit" id="submit">Confirm</button><br><br>
+            <a href="login.html">Create New Accout</a>
+        </section>
+        
+    </div>
+    
+    
+    <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
+    <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
+
+    <script src="epro.js"></script>
+
+    <!-- backtop -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sw = true;
+            $(window).scroll(function () {
+                if (sw) {
+                    sw = false;
+                    setTimeout(function () {
+
+                        if ($(this).scrollTop() != 0) {
+                            $('#backtop').show();
+                            sw = true;
+                        } else {
+                            $('#backtop').hide();
+                            sw = true;
+                        }
+
+                    }, 200);
+                }
+            });
+            $('#backtop').click(function () {
+
+                window.scrollTo(0, 0);
+                return false;
+            });
+        });
+    </script>
+    <script>
+
+        $('#up').click(function () {
+            $("section").toggle(500);
+        })
+
+    </script>
+    
+</body>
+
+</html>
