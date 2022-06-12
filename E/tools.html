@@ -101,7 +101,7 @@
                 <!-- tag: Garden Tool Sets-->
                 <div class="row">
                   <div class="column" style="background-image:url('./hinhepro/tool1.jpg')" onclick="window.location.href='./toolsinfos/toolsinfotag1/toolinfo1.html'">
-                     <!-- <img src="./hinhepro/tool1.jpg" alt=""> -->   
+                     <!-- <img src="./hinhepro/tool1.jpg" alt="">    -->
                     <p id="pname">Radius Garden 30502 Ergonomic 5-Piece Gardening Hand Tool Set, Green<span id="price">$49.99</span></p>
                   </div>
                   <div class="column" style="background-image:url('./hinhepro/tool2.jpg')" onclick="window.location.href='./toolsinfos/toolsinfotag1/toolinfo1-2.html'">
@@ -174,7 +174,7 @@
                 <b>SUBSCRIBE</b>
                 <p>Subscribe with your gmail to receive news and updates</p>
                 <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
-                <button type="sub" id="sub">GET</button><br></div>
+                <button type="sub" id="sub" onclick="myFunction()" >GET</button><br></div>
                 <textarea name="" id="" placeholder="       Comment"></textarea><br>
                 <button class="post" id="post">Post</button>
             </div>
@@ -236,6 +236,11 @@
         })
 
     </script>
+    <script>
+        function myFunction() {
+          alert("Thank you for your feedback!"+ "\n" +"We will try to improve our website in the future!");
+        }
+        </script>
     
 </body>
 

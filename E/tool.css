@@ -1,17 +1,23 @@
 
+.noidung{
+  background-image: url();
+}
 .row{
   text-align:center;
   position: relative;
+  
 }
 .column{
     float: left;
     width: 33%;
-    border: solid thin;
+    border: solid;
+    border-width: 10%;
     height: 200px;
-    /* background-color: rgb(175, 162, 162); */
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     background-size:contain;
     background-repeat: no-repeat;
+    opacity: 100%;
   }
   
 /* Stops the float property from affecting content after the columns */
