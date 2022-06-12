@@ -1,6 +1,6 @@
 .container{
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 100%;
+    height: auto;
 
 }
 #frame{
@@ -8,6 +8,9 @@
     height: 330px;
     background-image: url("./tooljpg/tool1.jpg");
     background-size: cover;
+    background-repeat:  no-repeat;
+    /* background-position: center center; */
+    
 }
 #tittle{
     position:relative;
@@ -24,16 +27,16 @@
 }
 #sb1{
     position: relative;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 #sb2{
     position: relative;
-    margin-top: -75px;
+    margin-top: -70px;
     margin-left: 70px;
 }
 #sb3{
     position: relative;
-    margin-top: -75px;
+    margin-top: -70px;
     margin-left: 140px;
 }
 #tag{
@@ -46,7 +49,7 @@
     position: relative;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 280px;
+    margin-left: 20px;
     background-color: aquamarine;
     border-radius: 5px;
     padding: 8px;
@@ -55,7 +58,7 @@
     position: relative;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 400px;
+    margin-left: 0px;
     background-color: aquamarine;
     border-radius: 5px;
     padding: 8px;
@@ -78,6 +81,10 @@
     border-radius: 5px;
     padding: 8px;
     margin-left: -50px;
-    margin-top: 127px;
+    margin-top: 165px;
     font-weight: bold;
+}
+#vid{
+ float: left;
+ margin-top: 80px;
 }
