@@ -6,8 +6,7 @@
     box-sizing: border-box;
 
 }
-
-.wrapper {
+.wrapper{
     margin: 0 auto;
 }
 
@@ -89,46 +88,6 @@
 
 }
 
-.menu {
-    position: absolute;
-    /* width: 1920px; */
-    width: 100%;
-    height: 90px;
-    top: 207px;
-    background: rgba(0, 0, 0, 0.6);
-    list-style-type: none;
-}
-
-.menu-item {
-    width: 17%;
-    float: left;
-    position: relative;
-    text-align: center;
-
-}
-
-.menu-item a {
-
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align: center;
-    overflow: hidden;
-    display: block;
-    height: 90px;
-
-}
-#small{
-    font-size: 20px;
-}
-
-.menu-item a:hover {
-    color: #169E00;
-}
 
 #giohang {
     color: #FFFFFF;
@@ -194,7 +153,7 @@ canvas {
 
 span {
     font-weight: bold;
-    transition: color 0.4s;
+    transition: color 0.2s;
 }
 
 /* ... */
@@ -294,7 +253,7 @@ form button:hover {
     min-width: 0px;
     height: 20px;
     font-size: 20px;
-
+    
     margin-top: -24px;
     right: 170px;
 
@@ -548,7 +507,7 @@ form button:hover {
 /* chan trang */
 .and {
     margin-bottom: 0px;
-
+    
     height: 310px;
     padding: 0px 19px;
     padding-top: 10px;
@@ -706,7 +665,7 @@ form button:hover {
 
 /* ... */
 
-.sup1 b {
+.sup1 b{
     position: absolute;
     width: 100%;
     top: 80px;
@@ -720,7 +679,7 @@ form button:hover {
     color: #000000;
 }
 
-.sup1 p {
+.sup1 p{
     position: absolute;
     width: 100%;
     top: 200px;
@@ -733,9 +692,8 @@ form button:hover {
     text-align: center;
     color: #000000;
 }
-
-.sup1 input {
-
+.sup1 input{
+   
     box-sizing: border-box;
     position: absolute;
     width: 600px;
@@ -745,15 +703,13 @@ form button:hover {
     border: 1px solid rgba(0, 0, 0, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.sup1 .email {
+.sup1 .email{
     width: 30%;
     margin: 0 auto;
-    left: 26%;
+    left:26%;
 
 }
-
-.sup1 button {
+.sup1 button{
     box-sizing: border-box;
     position: absolute;
     left: 59%;
@@ -769,8 +725,7 @@ form button:hover {
     line-height: 48px;
     color: rgba(0, 0, 0, 0.6);
 }
-
-.sup1 .post {
+.sup1 .pot{
     box-sizing: border-box;
     position: absolute;
     left: 59%;
@@ -786,31 +741,28 @@ form button:hover {
     line-height: 48px;
     color: rgba(0, 0, 0, 0.6);
 }
-
-.sup1 button:hover {
+.sup1 button:hover{
     color: #fff;
-    background: #22fc00;
+    background:#22fc00;
 }
-
-.sup1 textarea {
+.sup1 textarea{
     box-sizing: border-box;
     position: absolute;
     width: 50%;
     height: 200px;
-    left: 25%;
+    left:25%;
     top: 500px;
-    color: #fff;
+    color:#fff;
     font-size: 30px;
     font-family: 'Inria Sans';
     font-style: normal;
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(0, 0, 0, 0.6);
 }
-
-.responsive a i {
+.responsive a i{
     position: absolute;
     color: #ffffff;
-
+    
     position: absolute;
 
     right: 50px;
@@ -820,84 +772,9 @@ form button:hover {
     font-weight: 400;
     font-size: 30px;
 }
-
 @media (max-width: 768px) {
-    #menu a {
+    #menu  a {
         display: block;
     }
 }
-
-/*menu */
-.nav2,
-.nav2 ul {
-    list-style: none;
-    position: relative;
-    line-height: 45px;
-    z-index: 99;
-}
-
-.nav2 li:last-child {
-    background: none;
-}
-
-
-
-.nav2 ul a {
-    display: block;
-    padding: 0px 8px;
-    color: white;
-    text-decoration: none;
-}
-
-
-.nav2 li {
-    float: left;
-    position: relative;
-}
-
-.nav2 ul {
-    position: absolute;
-    top: 90px;
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.nav2>li>ul>li {
-    display: block;
-    width: 100%;
-}
-
-.nav2>li>ul>li>a {
-    display: block;
-    width: 100%;
-    line-height: 24px;
-    padding: 8px 10px;
-}
-
-.nav2 li ul a {
-    float: left;
-}
-
-.nav2 ul ul {
-    top: auto;
-}
-
-.nav2 li ul ul {
-    left: 10em;
-    margin: 0px 0 0 10px;
-}
-
-.nav2 li:hover ul ul,
-.nav2 li:hover ul ul ul,
-.nav2 li:hover ul ul ul ul {
-    display: none;
-}
-
-.nav2 li:hover ul,
-.nav2 li li:hover ul,
-.nav2 li li li:hover ul,
-.nav2 li li li li:hover ul {
-    display: block;
-}
-
-/*end menu*/
+    

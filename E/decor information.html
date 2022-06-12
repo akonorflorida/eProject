@@ -4,108 +4,315 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="HandhelFriendly" content="true"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>decor information</title>
-    <link rel="stylesheet" href="decor.css">
+    <title>abuots</title>
+    <link rel="icon" href="./hinhepro/logopng.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- <script type="text/javascript" src="epro.js"></script> -->
+
+
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="decor.css">
+    <style>
+        .noidung{
+            width: 100%;
+            margin-top: 297px;
+            
+        }
+        
+        .end {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            float: left;
+            
+        }
+        .endd{
+            display: flex;
+            left:20%;
+            padding-top: 15px ;
+            width: 25%;
+            color: #ffffff;
+            float: left;
+            justify-content:space-around;
+        }
+        .endd a{
+            font-size:50px;
+            color: #ffff
+        }
+        .endd a:hover{
+            
+            color: rgb(0, 255, 21);
+            text-decoration: none;
+        }
+        .out b{
+            
+            margin: 0px auto;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 48px;
+            color: #000000;
+
+        }
+        .out{
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            
+            
+           
+        }
+        .out1,.out2,.out3,.out4{
+            width: 350px;
+            text-align: center;
+            float: left;
+            width: 25%;
+            font-size: 30px;
+            
+        }
+        .tt{
+           
+            width: 80%;
+            height: 750px ;
+            
+            margin: 0 auto;
+        }
+        .text{
+            width: 50%;
+            height: 100%;
+            background: #D9D9D9;
+            float: left;
+        }
+        .img{
+            width: 50%;
+            height: 100%;
+            background: url(./hinhepro/5.2.jpg);
+            float: left;
+            background-size: cover;
+            
+        }
+        .text p{
+            
+            padding: 200px 0 0 0;
+            
+            margin-left: 2%;
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 42px;
+            color: rgba(0, 0, 0, 0.6);
+
+        }
+       
+    </style>
+
+
 </head>
 
-<body onload="onPageLoad()">
+<body>
+    <div id="wrapper">
+        
+        <div id="logo">
+            <div class="textlogo">
+                <span>G</span>
+                <span>A</span>
+                <span>R</span>
+                <span class="png"><img src="./hinhepro/png.png" alt=""></span>
+                <span>E</span>
+                <span>N</span>
+            </div>
+            
+            <div class="mymenu" id="menu">
+                <a href="index.html">HOME</a>
+                <a href="tips.html">Tips</a>
+                <a href="tools.html">Tools</a>
+                <a href="decor.html">Decor</a>
+                <a href="">Abouts</a>
+            </div>
 
-    <div class="form" id="decor_information">
+            <div id="giohang">
+                <a class="aa" href="#"><i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal"
+                        data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
+                <a class="a" href="#"><i id="up" class="glyphicon glyphicon-user"></i></a>
+            </div>
+            <!-- <div class="responsive ">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> -->   
+        </div>
+        <div class="noidung">
+            <body onload="onPageLoad()">
 
+                <div class="form" id="decor_information">
+            
+                </div>
+                <div>
+                    <script>
+                        var data = [
+                            { "id": "01", "name": "Red rose", "type": "rose", "price": 4999, "star": 5, "img": "hoahong1.jpg", "title": "Feedback About Product", "img1": "hoahong1.jpg", "img2": "hoahong2.jpg", "img3": "hoahong3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
+                            { "id": "02", "name": "Yellow rose", "type": "rose", "price": 5999, "star": 5, "img": "hoahongvang1.jpeg", "title": "Feedback About Product", "img1": "hoahongvang1.jpeg", "img2": "hoahongvang2.jpg", "img3": "hoahongvang3.webp", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
+                            { "id": "03", "name": "pink rose", "type": "rose", "price": 4599, "star": 5, "img": "hoahonghong1.jpg", "title": "Feedback About Product", "img1": "hoahonghong1.jpg", "img2": "hoahonghong2.jpg", "img3": "hoahonghong3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
+                            { "id": "04", "name": "rose greend", "type": "rose", "price": 3599, "star": 5, "img": "hoahongxanh1.jpg", "title": "Feedback About Product", "img1": "hoahongxanh1.jpg", "img2": "hoahongxanh2.jpg", "img3": "hoahongxanh3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
+                            { "id": "05", "name": "tree cau's yellow", "type": "ornamental ", "price": 8999, "star": 5, "img": "caycauvang1.jpg", "title": "Feedback About Product", "img1": "caycauvang1.jpg", "img2": "cauvang2.jpg", "img3": "cauvang3.jpeg", "describe": "With the ability to absorb toxins, along with a beautiful tree shape, long stem, the yellow areca tree is grown in pots as an interior ornamental plant, indoor decoration, office decoration ... or as an interior bonsai, foreign tree. Furniture, garden plants decorate the garden ... In terms of spirituality, contribute to bring peace to the homeowner, avoid bad luck, bad luck in life." },
+                            { "id": "06", "name": "porcelain tree", "type": "ornamental ", "price": 5599, "star": 5, "img": "caysudai1.jpg", "title": "Feedback About Product", "img1": "caysudai1.jpg", "img2": "caysudai2.jpg", "img3": "caysudai3.jpg", "describe": "Porcelain plants are light-loving plants that grow well in spaces with lots of sunlightEasy-going plants also do not have high water requirements, so they are drought tolerant, so they can also live in sandy or gravelly soils. Porcelain trees are planted in many spiritual places such as temples, pagodas, memorials for heroes and martyrs,... In addition, the tree also has the meaning of praying for peace, so it is often seen in hospitals. ." },
+                            { "id": "07", "name": "pine tree", "type": "ornamental", "price": 3599, "star": 5, "img": "caytung1.png", "title": "Feedback About Product", "img1": "caytung1.png", "img2": "caytung2.jpg", "img3": "caytung3.jpg", "describe": "The pine tree in feng shui represents strength and intense life, the pine tree grows and develops in austere conditions, lacks nutrients, lacks water and has the ability to endure extremely harsh cold.In feng shui, the meaning of the pine tree is very deep, known as the Lord of herbs. Currently, pine trees are very popular and used to decorate offices, homes or desks." },
+                            { "id": "08", "name": "Japanese palm tree", "type": "ornamental", "price": 7999, "star": 5, "img": "conhat1.webp", "title": "Feedback About Product", "img1": "conhat1.webp", "img2": "conhat2.jpg", "img3": "conhat3.jpg", "describe": "Japanese palm has a rather modest height, For ornamental plants, the trunk will be lower, instead the leaves will be elongated, many branches.Not only has high aesthetic value, the Japanese palm tree also symbolizes wealth and money. The shape of the leaf spreading round, forming a funnel symbolizes attracting fortune and luck. Growing Japanese palm trees in the house will attract a lot of success and money for the owner." },
+                            { "id": "09", "name": "ornamental coconut tree", "type": "ornamental", "price": 1399, "star": 5, "img": "duacanh1.jpg", "title": "Feedback About Product", "img1": "duacanh1.jpg", "img2": "duacanh2.jpg", "img3": "duacanh3.jpg", "describe": "In addition to the ability to prevent dust, provide oxygen and create more green space in the home, office or company, many companies and business shops place pots of ornamental coconut trees on both sides of the door or put ornamental coconut trees in the company or door. row. Thus, ornamental coconut trees not only help decorate company and shop premises, but also help attract luck and convenience at work." },
+                            { "id": "10", "name": "Fern", "type": "ornamental", "price": 9999, "star": 5, "img": "duongsi1.jpg", "title": "Feedback About Product", "img1": "duongsi1.jpg", "img2": "duongsi2.jpg", "img3": "duongsi3.jpg", "describe": "Ancient ferns were used to decorate or beautify the landscape and surroundings. The tree has strong vitality over millions of years, so it means to rise up in life, to have resilience and strong will. You give this potted plant to your loved ones of the ancient fern as a comforting wish when facing difficulties in life.Growing ferns in the house is not only decorative but also meaningful to bring the family a peaceful health, luck and happiness." },
+                            { "id": "11", "name": "Sun Flower", "type": "sun", "price": 1099, "star": 5, "img": "hoahuongduong1.jpg", "title": "Feedback About Product", "img1": "hoahuongduong1.jpg", "img2": "hoahuongduong2.jpg", "img3": "hoahuongduong3.jpg", "describe": "This is a herbaceous plant that lives for about one year, large straight stem with stiff hairs, often spotted, 1-3 m high. Leaves are large, often alternate, with long stalks, leaf blade ovate-pointed, heart-shaped below, serrated margins, both sides white hairy. Inflorescences large, 7-20 cm in diameter, ovate-shaped; Tongue-shaped flowers, outer yellow; The flowers are hermaphroditic in the middle of a pinkish purple color. The tree blooms in winter and spring" },
+                            { "id": "12", "name": "purple orchids", "type": "Orchid", "price": 1899, "star": 5, "img": "hoalan1.jpg", "title": "Feedback About Product", "img1": "hoalan1.jpg", "img2": "hoalantim2.jpg", "img3": "hoalan3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant.." },
+                            { "id": "13", "name": "White orchids", "type": "Orchids", "price": 5999, "star": 5, "img": "hoalantrang1.jpg", "title": "Feedback About Product", "img1": "hoalantrang1.jpg", "img2": "hoalantrang2.jpg", "img3": "hoalantrang3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant." },
+                            { "id": "14", "name": "yellow orchids", "type": "Orchids", "price": 4799, "star": 5, "img": "hoalanvang1.png", "title": "Feedback About Product", "img1": "hoalanvang1.png", "img2": "hoalanvang2.jpg", "img3": "hoalanvang3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant." },
+                            { "id": "15", "name": "purple lotus ", "type": "lotus", "price": 5999, "star": 5, "img": "hoasen1.jpg", "title": "Feedback About Product", "img1": "hoasen1.jpg", "img2": "hoasen2.jpg", "img3": "hoasen3.jpg", "describe": "The lotus flower symbolizes purity, escape from the world, living in the mud but always keeping the purity.Therefore, many people often display items in the house such as lotus branches, lotus dishes, lotus lamps, etc., which will make the space more cozy, pure and gentle. has the effect of regulating prosperity, increasing the energy source of health for the family, as well as helping the owner remove all worries, calm down, enjoy happiness." },
+                            { "id": "16", "name": "White Lotus", "type": "lotus", "price": 5999, "star": 5, "img": "hoasentrang1.jpg", "title": "Feedback About Product", "img1": "hoasentrang1.jpg", "img2": "hoasentrang2.jpg", "img3": "hoasentrang3.png", "describe": "The lotus flower symbolizes purity, escape from the world, living in the mud but always keeping the purity.Therefore, many people often display items in the house such as lotus branches, lotus dishes, lotus lamps, etc., which will make the space more cozy, pure and gentle. has the effect of regulating prosperity, increasing the energy source of health for the family, as well as helping the owner remove all worries, calm down, enjoy happiness." },
+                            { "id": "17", "name": "Loc Vung tree", "type": "ornamental", "price": 1099, "star": 5, "title": "Feedback About Product", "img1": "locvung1.jpg", "img2": "locvung2.jpg", "img3": "locvung3.png", "img": "locvung1.jpg", "describe": "Loc Vung tree has the meaning of feng shui luck, fortune, good for the owner. The red sesame buds represent happiness and are associated with the meaning of prosperity and fortune. In addition, it also symbolizes the will to be steadfast, hard to change. This is the meaning of the big, strong Sesame Locust trees. In addition, it also means longevity for family members" },
+                            { "id": "18", "name": "tiger tongue tree", "type": "ornamental", "price": 7999, "star": 5, "title": "Feedback About Product", "img1": "luho1.jpg", "img2": "luho2.jpg", "img3": "luho3.jpg", "img": "luho1.jpg", "describe": "Thanks to its ability to absorb toxins and clean the air, Tiger Tongue also helps limit greenhouse syndrome.  Not only brings beauty but also creates fresh air, which is very good for human health. In particular, planting tiger tongue in the bedroom will be extremely beneficial. They help release oxygen, absorb CO2 which is very good for human respiratory activity. You will have a better and deeper sleep, create psychological comfort, provide optimal energy." },
+                            { "id": "19", "name": "fortune tree", "type": "ornamental", "price": 9999, "star": 5, "title": "Feedback About Product", "img1": "phattai01.jpg", "img2": "phattai2.jpg", "img3": "phattai3.jpg", "img": "phattai1.jpg", "describe": "The fortune tree has strong vitality even in harsh conditions, but the trunk still grows proudly. In feng shui symbolizing luck, fortune, prosperity, many people grow it to decorate their home, office, or as a meaningful gift. The fortune tree has many different types of trees such as the fortune tree, the mountain fortune tree, the magnolia tree, the fortune needle, and the lotus bud." },
+                            { "id": "20", "name": "stone lotus", "type": "lotus", "price": 1199, "star": 5, "img": "senda1.jpg", "title": "Feedback About Product", "img1": "senda1.jpg", "img2": "senda2.jpg", "img3": "senda3.jpg", "describe": "The succulent plant is a symbol of the will to persevere, striving to rise in life because of its intense vitality - adapting to all climates, all terrains and living all year round and when falling leaves can sprout. from there and grow a new tree.In addition, the stone lotus also has the meaning of bringing peace and good omens to the homeowner because the leaves are often arranged in the shape of lotus flowers like the lotus that Buddha Quan Am often sits on." },
+                            { "id": "21", "name": "military bamboo tree", "type": "ornamental", "price": 9899, "star": 5, "title": "Feedback About Product", "img1": "trucquantu1.jpg", "img2": "trucquantu2.jpg", "img3": "trucquantu3.jpg", "img": "trucquantu1.jpg", "describe": "Truc Quan Tu symbolizes righteousness and straightforwardness because of their upright posture.Truc Quan Tu brings good luck and prosperous business.Truc Quan Tu represents mastery, easily overcome challenges in life.Truc Quan Tu means to release bad things and bring good luck.The tree also symbolizes strong will, not faltering in difficulties.The tree brings good luck in exams and helps against opponents." },
+                        ];
+                        function getUrlVars() {
+                            var vars = {};
+                            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                                function (m, key, value) {
+                                    vars[key] = value;
+                                });
+                            return vars;
+                        }
+                        function onPageLoad() {
+                            var urlParams = getUrlVars();
+                            var id = urlParams["id"];
+                            if (id) {
+                                data = data.filter(x => x.id == id);
+                            }
+                            displayData();
+                        }
+                        function displayData() {
+                            var information = document.getElementById("decor_information");
+                            information.innerHTML = '';
+                            for (var i = 0; i < data.length; i++) {
+                                var childElement = buildItem(data[i]);
+                                information.appendChild(childElement);
+                            }
+                        }
+                        function changeImage(sender) {
+                            document.getElementById('img_main').src = sender.src;
+                        }
+            
+                        function buildItem(item) {
+                            var div = document.createElement("div");
+                            div.className = "pic";
+                            div.innerHTML = `
+                                <img src="imghoa/${item.img}" class="img3" id="img_main">
+                                        <h1>${item.name}</h1>
+                                        <div class="chu">
+                                            ${item.describe}
+                                        </div>
+                                    </div>
+                                        <div id="sb1"><img src="imghoa/${item.img1}" class="kicon" onclick="changeImage(this)"></div>
+                                        <div id="sb2"><img src="imghoa/${item.img2}"class="kicon" onclick="changeImage(this)"></div>
+                                        <div id="sb3"><img src="imghoa/${item.img3}" class="kicon" onclick="changeImage(this)"></div>
+                                        <div class="chu2">
+                                            tags:dudo...,
+                                        </div>
+                                        <p class="p1">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </p>
+                                        <p class="p2">${item.price}$</p>
+                                        <p class="p3"><button class="add" placeholder="add">add</button></p>
+            
+                                        <span class="chu3">${item.title}</span><br>
+                                        <span><textarea name="" id="" class="comment"></textarea></span>
+                                        <p class="smsend"><button  class="send" placeholder="" onclick="myFunction()" >send</button></p>`;
+            
+                            return div;
+                        }
+                        function myFunction() {
+                          alert("Thank you for your feedback!"+ "\n" +"We will try to improve our website in the future!");
+                        }
+                    </script>
+                    
+                        
+                </div>
+            
+            
+            </body>
+        </div>
+        
+        <div class="end">
+            <div class="endd"><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-youtube-play" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href="">in</a></div>
+        </div>
+        
+
+        <section id="in">
+            <input id="email" type="text" placeholder="  Email"><br><br>
+            <input id="password" type="password" placeholder="  Password"><br><br>
+            <button type="submit" id="submit">Confirm</button><br><br>
+            <a href="login.html">Create New Accout</a>
+        </section>
+        
     </div>
-    <div>
-        <script>
-            var data = [
-                { "id": "01", "name": "Red rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahong1.jpg", "title": "Feedback About Product", "img1": "hoahong1.jpg", "img2": "hoahong2.jpg", "img3": "hoahong3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                { "id": "02", "name": "Yellow rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahongvang1.jpeg", "title": "Feedback About Product", "img1": "hoahongvang1.jpeg", "img2": "hoahongvang2.jpg", "img3": "hoahongvang3.webp", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                { "id": "03", "name": "pink rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahonghong1.jpg", "title": "Feedback About Product", "img1": "hoahonghong1.jpg", "img2": "hoahonghong2.jpg", "img3": "hoahonghong3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                { "id": "04", "name": "rose greend", "type": "rose", "price": 1000, "star": 5, "img": "hoahongxanh1.jpg", "title": "Feedback About Product", "img1": "hoahongxanh1.jpg", "img2": "hoahongxanh2.jpg", "img3": "hoahongxanh3.jpg", "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                { "id": "05", "name": "tree cau's yellow", "type": "ornamental ", "price": 1000, "star": 5, "img": "caycauvang1.jpg", "title": "Feedback About Product", "img1": "caycauvang1.jpg", "img2": "cauvang2.jpg", "img3": "cauvang3.jpeg", "describe": "With the ability to absorb toxins, along with a beautiful tree shape, long stem, the yellow areca tree is grown in pots as an interior ornamental plant, indoor decoration, office decoration ... or as an interior bonsai, foreign tree. Furniture, garden plants decorate the garden ... In terms of spirituality, contribute to bring peace to the homeowner, avoid bad luck, bad luck in life." },
-                { "id": "06", "name": "porcelain tree", "type": "ornamental ", "price": 1000, "star": 5, "img": "caysudai1.jpg", "title": "Feedback About Product", "img1": "caysudai1.jpg", "img2": "caysudai2.jpg", "img3": "caysudai3.jpg", "describe": "Porcelain plants are light-loving plants that grow well in spaces with lots of sunlightEasy-going plants also do not have high water requirements, so they are drought tolerant, so they can also live in sandy or gravelly soils. Porcelain trees are planted in many spiritual places such as temples, pagodas, memorials for heroes and martyrs,... In addition, the tree also has the meaning of praying for peace, so it is often seen in hospitals. ." },
-                { "id": "07", "name": "pine tree", "type": "ornamental", "price": 1000, "star": 5, "img": "caytung1.png", "title": "Feedback About Product", "img1": "caytung1.png", "img2": "caytung2.jpg", "img3": "caytung3.jpg", "describe": "The pine tree in feng shui represents strength and intense life, the pine tree grows and develops in austere conditions, lacks nutrients, lacks water and has the ability to endure extremely harsh cold.In feng shui, the meaning of the pine tree is very deep, known as the Lord of herbs. Currently, pine trees are very popular and used to decorate offices, homes or desks." },
-                { "id": "08", "name": "Japanese palm tree", "type": "ornamental", "price": 1000, "star": 5, "img": "conhat1.webp", "title": "Feedback About Product", "img1": "conhat1.webp", "img2": "conhat2.jpg", "img3": "conhat3.jpg", "describe": "Japanese palm has a rather modest height, For ornamental plants, the trunk will be lower, instead the leaves will be elongated, many branches.Not only has high aesthetic value, the Japanese palm tree also symbolizes wealth and money. The shape of the leaf spreading round, forming a funnel symbolizes attracting fortune and luck. Growing Japanese palm trees in the house will attract a lot of success and money for the owner." },
-                { "id": "08", "name": "ornamental coconut tree", "type": "ornamental", "price": 1000, "star": 5, "img": "duacanh1.jpg", "title": "Feedback About Product", "img1": "duacanh1.jpg", "img2": "duacanh2.jpg", "img3": "duacanh3.jpg", "describe": "In addition to the ability to prevent dust, provide oxygen and create more green space in the home, office or company, many companies and business shops place pots of ornamental coconut trees on both sides of the door or put ornamental coconut trees in the company or door. row. Thus, ornamental coconut trees not only help decorate company and shop premises, but also help attract luck and convenience at work." },
-                { "id": "10", "name": "Fern", "type": "ornamental", "price": 1000, "star": 5, "img": "duongsi1.jpg", "title": "Feedback About Product", "img1": "duongsi1.jpg", "img2": "duongsi2.jpg", "img3": "duongsi3.jpg", "describe": "Ancient ferns were used to decorate or beautify the landscape and surroundings. The tree has strong vitality over millions of years, so it means to rise up in life, to have resilience and strong will. You give this potted plant to your loved ones of the ancient fern as a comforting wish when facing difficulties in life.Growing ferns in the house is not only decorative but also meaningful to bring the family a peaceful health, luck and happiness." },
-                { "id": "11", "name": "Sun Flower", "type": "sun", "price": 1000, "star": 5, "img": "hoahuongduong1.jpg", "title": "Feedback About Product", "img1": "hoahuongduong1.jpg", "img2": "hoahuongduong2.jpg", "img3": "hoahuongduong3.jpg", "describe": "This is a herbaceous plant that lives for about one year, large straight stem with stiff hairs, often spotted, 1-3 m high. Leaves are large, often alternate, with long stalks, leaf blade ovate-pointed, heart-shaped below, serrated margins, both sides white hairy. Inflorescences large, 7-20 cm in diameter, ovate-shaped; Tongue-shaped flowers, outer yellow; The flowers are hermaphroditic in the middle of a pinkish purple color. The tree blooms in winter and spring" },
-                { "id": "12", "name": "purple orchids", "type": "Orchid", "price": 1000, "star": 5, "img": "hoalan1.jpg", "title": "Feedback About Product", "img1": "hoalan1.jpg", "img2": "hoalantim2.jpg", "img3": "hoalan3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant.." },
-                { "id": "13", "name": "White orchids", "type": "Orchids", "price": 1000, "star": 5, "img": "hoalantrang1.jpg", "title": "Feedback About Product", "img1": "hoalantrang1.jpg", "img2": "hoalantrang2.jpg", "img3": "hoalantrang3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant." },
-                { "id": "14", "name": "yellow orchids", "type": "Orchids", "price": 1000, "star": 5, "img": "hoalanvang1.png", "title": "Feedback About Product", "img1": "hoalanvang1.png", "img2": "hoalanvang2.jpg", "img3": "hoalanvang3.jpg", "describe": "Orchids symbolize love, loyalty, when someone gives you a bouquet of fresh orchids, it means they are expressing their sincere and abundant love for you. This flower is like a compliment to a lover about intelligence, pure kindness and kind heart. Orchid is a plant used to decorate many families by orchids. bring a pure beauty, gentle but no less profound, brilliant." },
-                { "id": "15", "name": "purple lotus ", "type": "lotus", "price": 1000, "star": 5, "img": "hoasen1.jpg", "title": "Feedback About Product", "img1": "hoasen1.jpg", "img2": "hoasen2.jpg", "img3": "hoasen3.jpg", "describe": "The lotus flower symbolizes purity, escape from the world, living in the mud but always keeping the purity.Therefore, many people often display items in the house such as lotus branches, lotus dishes, lotus lamps, etc., which will make the space more cozy, pure and gentle. has the effect of regulating prosperity, increasing the energy source of health for the family, as well as helping the owner remove all worries, calm down, enjoy happiness." },
-                { "id": "16", "name": "White Lotus", "type": "lotus", "price": 1000, "star": 5, "img": "hoasentrang1.jpg", "title": "Feedback About Product", "img1": "hoasentrang1.jpg", "img2": "hoasentrang2.jpg", "img3": "hoasentrang3.png", "describe": "The lotus flower symbolizes purity, escape from the world, living in the mud but always keeping the purity.Therefore, many people often display items in the house such as lotus branches, lotus dishes, lotus lamps, etc., which will make the space more cozy, pure and gentle. has the effect of regulating prosperity, increasing the energy source of health for the family, as well as helping the owner remove all worries, calm down, enjoy happiness." },
-                { "id": "17", "name": "Loc Vung tree", "type": "ornamental", "price": 1000, "star": 5, "title": "Feedback About Product", "img1": "locvung1.jpg", "img2": "locvung2.jpg", "img3": "locvung3.png", "img": "locvung1.jpg", "describe": "Loc Vung tree has the meaning of feng shui luck, fortune, good for the owner. The red sesame buds represent happiness and are associated with the meaning of prosperity and fortune. In addition, it also symbolizes the will to be steadfast, hard to change. This is the meaning of the big, strong Sesame Locust trees. In addition, it also means longevity for family members" },
-                { "id": "18", "name": "tiger tongue tree", "type": "ornamental", "price": 1000, "star": 5, "title": "Feedback About Product", "img1": "luho1.jpg", "img2": "luho2.jpg", "img3": "luho3.jpg", "img": "luho1.jpg", "describe": "Thanks to its ability to absorb toxins and clean the air, Tiger Tongue also helps limit greenhouse syndrome.  Not only brings beauty but also creates fresh air, which is very good for human health. In particular, planting tiger tongue in the bedroom will be extremely beneficial. They help release oxygen, absorb CO2 which is very good for human respiratory activity. You will have a better and deeper sleep, create psychological comfort, provide optimal energy." },
-                { "id": "19", "name": "fortune tree", "type": "ornamental", "price": 1000, "star": 5, "title": "Feedback About Product", "img1": "phattai01.jpg", "img2": "phattai2.jpg", "img3": "phattai3.jpg", "img": "phattai1.jpg", "describe": "The fortune tree has strong vitality even in harsh conditions, but the trunk still grows proudly. In feng shui symbolizing luck, fortune, prosperity, many people grow it to decorate their home, office, or as a meaningful gift. The fortune tree has many different types of trees such as the fortune tree, the mountain fortune tree, the magnolia tree, the fortune needle, and the lotus bud." },
-                { "id": "20", "name": "stone lotus", "type": "lotus", "price": 1000, "star": 5, "img": "senda1.jpg", "title": "Feedback About Product", "img1": "senda1.jpg", "img2": "senda2.jpg", "img3": "senda3.jpg", "describe": "The succulent plant is a symbol of the will to persevere, striving to rise in life because of its intense vitality - adapting to all climates, all terrains and living all year round and when falling leaves can sprout. from there and grow a new tree.In addition, the stone lotus also has the meaning of bringing peace and good omens to the homeowner because the leaves are often arranged in the shape of lotus flowers like the lotus that Buddha Quan Am often sits on." },
-                { "id": "21", "name": "military bamboo tree", "type": "ornamental", "price": 1000, "star": 5, "title": "Feedback About Product", "img1": "trucquantu1.jpg", "img2": "trucquantu2.jpg", "img3": "trucquantu3.jpg", "img": "trucquantu1.jpg", "describe": "Truc Quan Tu symbolizes righteousness and straightforwardness because of their upright posture.Truc Quan Tu brings good luck and prosperous business.Truc Quan Tu represents mastery, easily overcome challenges in life.Truc Quan Tu means to release bad things and bring good luck.The tree also symbolizes strong will, not faltering in difficulties.The tree brings good luck in exams and helps against opponents." },
-            ];
-            function getUrlVars() {
-                var vars = {};
-                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-                    function (m, key, value) {
-                        vars[key] = value;
-                    });
-                return vars;
-            }
-            function onPageLoad() {
-                var urlParams = getUrlVars();
-                var id = urlParams["id"];
-                if (id) {
-                    data = data.filter(x => x.id == id);
+    
+    <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
+    <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
+
+    <script src="epro.js"></script>
+
+    <!-- backtop -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sw = true;
+            $(window).scroll(function () {
+                if (sw) {
+                    sw = false;
+                    setTimeout(function () {
+
+                        if ($(this).scrollTop() != 0) {
+                            $('#backtop').show();
+                            sw = true;
+                        } else {
+                            $('#backtop').hide();
+                            sw = true;
+                        }
+
+                    }, 200);
                 }
-                displayData();
-            }
-            function displayData() {
-                var information = document.getElementById("decor_information");
-                information.innerHTML = '';
-                for (var i = 0; i < data.length; i++) {
-                    var childElement = buildItem(data[i]);
-                    information.appendChild(childElement);
-                }
-            }
-            function changeImage(sender) {
-                document.getElementById('img_main').src = sender.src;
-            }
+            });
+            $('#backtop').click(function () {
 
-            function buildItem(item) {
-                var div = document.createElement("div");
-                div.className = "pic";
-                div.innerHTML = `
-                    <img src="imghoa/${item.img}" class="img3" id="img_main">
-                            <h1>${item.name}</h1>
-                            <div class="chu">
-                                ${item.describe}
-                            </div>
-                        </div>
-                            <div id="sb1"><img src="imghoa/${item.img1}" class="kicon" onclick="changeImage(this)"></div>
-                            <div id="sb2"><img src="imghoa/${item.img2}"class="kicon" onclick="changeImage(this)"></div>
-                            <div id="sb3"><img src="imghoa/${item.img3}" class="kicon" onclick="changeImage(this)"></div>
-                            <div class="chu2">
-                                tags:dudo...,
-                            </div>
-                            <p class="p1">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </p>
-                            <p class="p2">${item.price.toFixed(2)}$</p>
-                            <p class="p3"><input type="sumitb" value="Add" class="add"></p>
+                window.scrollTo(0, 0);
+                return false;
+            });
+        });
+    </script>
+    <script>
 
-                            <span class="chu3">${item.title}</span><br>
-                            <span><input type="comment" class="comment"></span>
-                            <p class="smsend"><input type="sumitb" value="send" class="send"></p>`;
+        $('#up').click(function () {
+            $("section").toggle(500);
+        })
 
-                return div;
-            }
-
-
-        </script>
-    </div>
-
-
+    </script>
+    
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 
 .noidung{
-  background-image: url();
+  background-image: url(/Ep/hinhepro/);
 }
 .row{
   text-align:center;
@@ -42,7 +42,6 @@
   padding: 4px 10px;
   position: sticky;
   vertical-align: bottom;
-  
 }
 
 /* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 

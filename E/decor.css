@@ -1,12 +1,12 @@
 /* DECOR */
 .form {
-
+   
     border: black 1px solid;
 }
 
 .form1andform {
     margin-left: 70px;
-
+   
 }
 
 .pic {
@@ -132,7 +132,7 @@ h1 {
 
 .p1 {
     position: relative;
-
+    margin-top: 30px;
     font-size: 50px;
 }
 

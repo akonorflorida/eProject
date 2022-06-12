@@ -14,23 +14,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="decor.css">
+    
+    
 
     <!-- <script type="text/javascript" src="epro.js"></script> -->
 
-    <link rel="icon" href="./imghoa/logopng.png">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="decor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .noidung {
+        .noidung{
             width: 100%;
             margin-top: 297px;
-
+            
         }
-
-        .sup1 {
+        .sup1{
             position: relative;
             width: 100%;
             height: 790px;
@@ -38,34 +36,32 @@
             background: url(./hinhepro/5.1.jpg);
             background-size: cover;
         }
-
         .end {
             width: 100%;
             background: rgba(0, 0, 0, 0.6);
             float: left;
-
+            
         }
-
-        .endd {
+        .endd{
             display: flex;
-            left: 20%;
-            padding-top: 15px;
+            left:20%;
+            padding-top: 15px ;
             width: 25%;
             color: #ffffff;
             float: left;
-            justify-content: space-around;
+            justify-content:space-around;
         }
-
-        .endd a {
-            font-size: 50px;
+        .endd a{
+            font-size:50px;
             color: #ffff
         }
-
-        .endd a:hover {
-
+        .endd a:hover{
+            
             color: rgb(0, 255, 21);
             text-decoration: none;
         }
+        
+                
     </style>
 
 
@@ -73,7 +69,7 @@
 
 <body>
     <div id="wrapper">
-
+        
         <div id="logo">
             <div class="textlogo">
                 <span>G</span>
@@ -83,57 +79,14 @@
                 <span>E</span>
                 <span>N</span>
             </div>
-
-            <ul class="nav2 menu">
-                <li class="menu-item">
-                    <a href="">HOME</a>
-                    <ul class="sub-menu nav2">
-                        <li class="menu-item">
-                            <a href="">HOME</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">HOME</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">HOME</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="Tips.html">Tips</a>
-                    <ul class="sub-menu nav2">
-                        <li class="menu-item">
-                            <a href="">Tip 1 Blah blahhh Onn</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">Tip 1 Blah blahhh Onn</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">Tip 1 Blah blahhh Onn</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="Tools.html">Tools</a></li>
-                <li class="menu-item">
-                    <a href="#">Decor</a>
-                    <ul class="sub-menu nav2">
-                        <li class="menu-item">
-                            <a href="decor.html?type=rose">Rose</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="decor.html?type=lotus">Lotus</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="decor.html?type=sun">Sun</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="decor.html?type=ornamental">ornamental</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="about.html">Abouts</a></li>
-            </ul>
-
+            
+            <div class="mymenu" id="menu">
+                <a href="index.html">HOME</a>
+                <a href="tips.html">Tips</a>
+                <a href="tools.html">Tools</a>
+                <a href="">Decor</a>
+                <a href="abouts.html">Abouts</a>
+            </div>
             <div id="giohang">
                 <a class="aa" href="#"><i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal"
                         data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
@@ -143,37 +96,36 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-            </div> -->
+            </div> -->   
         </div>
         <div class="noidung">
-
             <body onload="onPageLoad()">
                 <div class="form" id="decor_container">
 
                 </div>
                 <script>
                     var data = [
-                        { "id": "01", "name": "Red rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahong1.jpg", "thums": ["hoahong1.jpg", "hoahong2.jpg", "hoahong3.jpg"], "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                        { "id": "02", "name": "Yellow rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahongvang1.jpeg", "thums": ["hoahongvang1.jpeg", "hoahongvang2.jpg", "hoahongvang3.webp"], "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                        { "id": "03", "name": "pink rose", "type": "rose", "price": 1000, "star": 5, "img": "hoahonghong1.jpg", "thums": ["hoahonghong1.jpg", "hoahonghong2.jpg", "hoahonghong3.jpg"], "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                        { "id": "04", "name": "rose greend", "type": "rose", "price": 1000, "star": 5, "img": "hoahongxanh1.jpg", "thums": ["hoahongxanh1.jpg", "hoahongxanh2.jpg", "hoahongxanh3.jpg"], "describe": "These are upright or climbing shrubs with thorny stems and branches. Leaves compound with odd feathers, leaflets serrated, with accompanying leaves. Fragrant flowers, diverse colors: pink, white, yellow or red... Flowers often have many petals because male stamens turn into. Cup shaped flower stand. The fruit is held, gathered in the flower base to thicken the fruit." },
-                        { "id": "05", "name": "tree cau's yellow", "type": "ornamental ", "price": 1000, "star": 5, "img": "caycauvang1.jpg", "thums": ["caycauvang1.jpg", "cauvang2.jpeg", "cauvang3.jpg"], "describe": "Yellow areca trees are potted as interior ornamental plants, indoor decoration, office decoration ... or as ornamental plants, planted outdoors, garden plants to decorate the garden ..." },
-                        { "id": "06", "name": "porcelain tree", "type": "ornamental ", "price": 1000, "star": 5, "img": "caysudai1.jpg", "thums": ["caysudai1.jpg", "caysudai1.jpg", "caysudai1.jpg"], "describe": "The porcelain tree not only makes people fall in love with its gentle beauty. It also makes an impression on the viewer with impressive landscapes where the main characters are giant porcelain trees in the middle of the blue sky.In particular, knowing how to take care of ambassadors well, it will help you have a beautiful flower garden with full of colors and scents that make the opposite person constantly admire and love." },
-                        { "id": "07", "name": "pine tree", "type": "ornamental", "price": 1000, "star": 5, "img": "caytung1.png", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "The pine tree in feng shui represents strength and intense life, the pine tree grows and develops in austere conditions, lacks nutrients, lacks water and has the ability to endure extremely harsh cold.In feng shui, the meaning of the pine tree is very deep, known as the Lord of herbs. Currently, pine trees are very popular and used to decorate offices, homes or desks. There are many types of conifers, each with a different meaning." },
-                        { "id": "08", "name": "Japanese palm tree", "type": "ornamental", "price": 1000, "star": 5, "img": "conhat1.webp", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "Japanese palm has a rather modest height, usually under 2m, the body is gray, along the body there are many rough eyes left by the fallen leaves. For ornamental plants, the trunk will be lower, instead the leaves will be elongated, many branches." },
-                        { "id": "08", "name": "ornamental coconut tree", "type": "ornamental", "price": 1000, "star": 5, "img": "duacanh1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "Ornamental coconut trees in addition to their ability to prevent dust, provide oxygen and create more green space in the home, office or company, they also have a feng shui meaning." },
-                        { "id": "10", "name": "Fern", "type": "ornamental", "price": 1000, "star": 5, "img": "duongsi1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "Trees are used to decorate or beautify the landscape and the surrounding environment. The leaves are also used as a decorative leaf when wrapping flowers for gifts." },
-                        { "id": "11", "name": "Sun Flower", "type": "sun", "price": 1000, "star": 5, "img": "hoahuongduong1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "This is a herbaceous plant that lives for about one year, large straight stem with stiff hairs, often spotted, 1-3 m high. Leaves are large, often alternate, with long stalks, leaf blade ovate-pointed, heart-shaped below, serrated margins, both sides white hairy. Inflorescences large, 7-20 cm in diameter, ovate-shaped; Tongue-shaped flowers, outer yellow; The flowers are hermaphroditic in the middle of a pinkish purple color. The tree blooms in winter and spring" },
-                        { "id": "12", "name": "purple orchids", "type": "Orchid", "price": 1000, "star": 5, "img": "hoalan1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "is a family of flowering plants, belonging to the order Asparagus, the class of monocotyledons.[2] It is one of the largest families[3] of plants, and they are distributed throughout the world." },
-                        { "id": "13", "name": "White orchids", "type": "Orchids", "price": 1000, "star": 5, "img": "hoalantrang1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "is a family of flowering plants, belonging to the order Asparagus, the class of monocotyledons.[2] It is one of the largest families[3] of plants, and they are distributed throughout the world." },
-                        { "id": "14", "name": "yellow orchids", "type": "Orchids", "price": 1000, "star": 5, "img": "hoalanvang1.png", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "is a family of flowering plants, belonging to the order Asparagus, the class of monocotyledons.[2] It is one of the largest families[3] of plants, and they are distributed throughout the world." },
-                        { "id": "15", "name": "purple lotus ", "type": "lotus", "price": 1000, "star": 5, "img": "hoasen1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "The white lotus symbolizes the taming of humanity, bodhicitta, also known as enlightenment, usually has 8 petals corresponding to the Noble Eightfold Path. It is characteristic of the Tantric sect and is the lotus of the Buddhas. Later, there was the White Lotus sect, which took the white lotus as its symbol." },
-                        { "id": "16", "name": "White Lotus", "type": "lotus", "price": 1000, "star": 5, "img": "hoasentrang1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "The white lotus symbolizes the taming of humanity, bodhicitta, also known as enlightenment, usually has 8 petals corresponding to the Noble Eightfold Path. It is characteristic of the Tantric sect and is the lotus of the Buddhas. Later, there was the White Lotus sect, which took the white lotus as its symbol." },
-                        { "id": "17", "name": "Barringtonia acutangula", "type": "ornamental", "price": 1000, "star": 5, "img": "locvung1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "The sesame tree symbolizes fortune, prosperity, luck and affluence. Because the name of the tree is related to the word Loc, it will bring a lot of fortune to the owner. At the same time, the tree also means a harmonious family, brothers and sisters united by the luxuriant canopy of the tree and the clustering of flowers." },
-                        { "id": "18", "name": "tiger tongue tree", "type": "ornamental", "price": 1000, "star": 5, "img": "luho1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "In feng shui, the tiger tongue tree has a good effect in exorcism, warding off evil spirits and combating unlucky things in life. Leaves growing upright represent the determination and will of man to move forward. With a majestic appearance from the trunk to the top of the tree, it is a symbol of authority and fame." },
-                        { "id": "19", "name": "fortune tree", "type": "ornamental", "price": 1000, "star": 5, "img": "phattai1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "Fortune trees have the effect of beautifying the house, bringing a green space to the campus. This is also one of the indoor air-purifying plants, so it can be placed in bedrooms, other rooms, desks…" },
-                        { "id": "20", "name": "stone lotus", "type": "lotus", "price": 1000, "star": 5, "img": "senda1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "The white lotus symbolizes the taming of humanity, bodhicitta, also known as enlightenment, usually has 8 petals corresponding to the Noble Eightfold Path. It is characteristic of the Tantric sect and is the lotus of the Buddhas. Later, there was the White Lotus sect, which took the white lotus as its symbol." },
-                        { "id": "21", "name": "military bamboo tree", "type": "ornamental", "price": 1000, "star": 5, "img": "trucquantu1.jpg", "thums": ["hoahong1.jpg", "hoahong1.jpg", "hoahong1.jpg"], "describe": "Truc Quan Tu symbolizes righteousness and straightforwardness because of their upright posture.Truc Quan Tu brings good luck and prosperous business.Truc Quan Tu represents mastery, easily overcome challenges in life.Truc Quan Tu means to release bad things and bring good luck.The tree also symbolizes strong will, not faltering in difficulties.The tree brings good luck in exams and helps against opponents." },
+                        { "id": "01", "name": "Red rose", "type": "rose", "price": 4999, "star": 5, "img": "hoahong1.jpg" },
+                        { "id": "02", "name": "Yellow rose", "type": "rose", "price": 5999, "star": 5, "img": "hoahongvang1.jpeg" },
+                        { "id": "03", "name": "pink rose", "type": "rose", "price": 4599, "star": 5, "img": "hoahonghong1.jpg" },
+                        { "id": "04", "name": "rose greend", "type": "rose", "price": 3599, "star": 5, "img": "hoahongxanh1.jpg" },
+                        { "id": "05", "name": "tree cau's yellow", "type": "ornamental ", "price": 8999, "star": 5, "img": "caycauvang1.jpg" },
+                        { "id": "06", "name": "porcelain tree", "type": "ornamental ", "price": 5599, "star": 5, "img": "caysudai1.jpg" },
+                        { "id": "07", "name": "pine tree", "type": "ornamental", "price": 3599, "star": 5, "img": "caytung1.png" },
+                        { "id": "08", "name": "Japanese palm tree", "type": "ornamental", "price": 7999, "star": 5, "img": "conhat1.webp" },
+                        { "id": "09", "name": "ornamental coconut tree", "type": "ornamental", "price": 1399, "star": 5, "img": "duacanh1.jpg" },
+                        { "id": "10", "name": "Fern", "type": "ornamental", "price": 9999, "star": 5, "img": "duongsi1.jpg" },
+                        { "id": "11", "name": "Sun Flower", "type": "sun", "price": 1099, "star": 5, "img": "hoahuongduong1.jpg" },
+                        { "id": "12", "name": "purple orchids", "type": "Orchid", "price": 1899, "star": 5, "img": "hoalan1.jpg" },
+                        { "id": "13", "name": "White orchids", "type": "Orchids", "price": 5999, "star": 5, "img": "hoalantrang1.jpg", },
+                        { "id": "14", "name": "yellow orchids", "type": "Orchids", "price": 4799, "star": 5, "img": "hoalanvang1.png" },
+                        { "id": "15", "name": "purple lotus ", "type": "lotus", "price": 5999, "star": 5, "img": "hoasen1.jpg" },
+                        { "id": "16", "name": "White Lotus", "type": "lotus", "price": 1099, "star": 5, "img": "hoasentrang1.jpg" },
+                        { "id": "17", "name": "Barringtonia acutangula", "type": "ornamental", "price": 7999, "star": 5, "img": "locvung1.jpg" },
+                        { "id": "18", "name": "tiger tongue tree", "type": "ornamental", "price": 9899, "star": 5, "img": "luho1.jpg" },
+                        { "id": "19", "name": "fortune tree", "type": "ornamental", "price": 9999, "star": 5, "img": "phattai1.jpg" },
+                        { "id": "20", "name": "stone lotus", "type": "lotus", "price": 1199, "star": 5, "img": "senda1.jpg" },
+                        { "id": "21", "name": "military bamboo tree", "type": "ornamental", "price": 1799, "star": 5, "img": "trucquantu1.jpg" },
                     ];
                     function getUrlVars() {
                         var vars = {};
@@ -210,7 +162,7 @@
                             <p>${item.name}</p>
                         </span>
                             </a>
-                        <span class="span2">${item.price.toFixed(2)}$</span> <br>
+                        <span class="span2">${item.price}$</span> <br>
                         <span class="span3">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -229,80 +181,76 @@
 
                 </script>
             </body>
-
-            <div class="sup1">
-                <div>
-                    <b>SUBSCRIBE</b>
-                    <p>Subscribe with your gmail to receive news and updates</p>
-                    <div class="email"><input type="text" class="email" id="email" placeholder="        Email Address">
-                        <br>
-                        <button type="sub" id="sub">SIGN UP</button><br>
-                    </div>
-                    <textarea name="" id="" placeholder="       Comment"></textarea><br>
-                    <button class="post" id="post">Post</button>
-                </div>
-            </div>
-            <div class="end">
-                <div class="endd"><a href=""><i class="fa fa-instagram"
-                            style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-                <div class="endd"><a href=""><i class="fa fa-youtube-play"
-                            style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-                <div class="endd"><a href=""><i class="fa fa-facebook-f"
-                            style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-                <div class="endd"><a href="">in</a></div>
-            </div>
-
-
-            <section id="in">
-                <input id="email" type="text" placeholder="  Email"><br><br>
-                <input id="password" type="password" placeholder="  Password"><br><br>
-                <button type="submit" id="submit">Confirm</button><br><br>
-                <a href="login.html">Create New Accout</a>
-            </section>
-
+                
         </div>
+        <div class="sup1">
+            <div>
+                <b>SUBSCRIBE</b>
+                <p>Subscribe with your gmail to receive news and updates</p>
+                <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
+                <button type="sub" id="sub">SIGN UP</button><br></div>
+                <textarea name="" id="" placeholder="       Comment"></textarea><br>
+                <button class="pot" id="post">Post</button>
+            </div>
+        </div>
+        <div class="end">
+            <div class="endd"><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-youtube-play" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
+            <div class="endd"><a href="">in</a></div>
+        </div>
+        
 
-        <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
-        <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
+        <section id="in">
+            <input id="email" type="text" placeholder="  Email"><br><br>
+            <input id="password" type="password" placeholder="  Password"><br><br>
+            <button type="submit" id="submit">Confirm</button><br><br>
+            <a href="login.html">Create New Accout</a>
+        </section>
+        
+    </div>
+    
+    <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
+    <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
 
-        <script src="epro.js"></script>
+    <script src="epro.js"></script>
 
-        <!-- backtop -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                var sw = true;
-                $(window).scroll(function () {
-                    if (sw) {
-                        sw = false;
-                        setTimeout(function () {
+    <!-- backtop -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sw = true;
+            $(window).scroll(function () {
+                if (sw) {
+                    sw = false;
+                    setTimeout(function () {
 
-                            if ($(this).scrollTop() != 0) {
-                                $('#backtop').show();
-                                sw = true;
-                            } else {
-                                $('#backtop').hide();
-                                sw = true;
-                            }
+                        if ($(this).scrollTop() != 0) {
+                            $('#backtop').show();
+                            sw = true;
+                        } else {
+                            $('#backtop').hide();
+                            sw = true;
+                        }
 
-                        }, 200);
-                    }
-                });
-                $('#backtop').click(function () {
-
-                    window.scrollTo(0, 0);
-                    return false;
-                });
+                    }, 200);
+                }
             });
-        </script>
-        <script>
+            $('#backtop').click(function () {
 
-            $('#up').click(function () {
-                $("section").toggle(500);
-            })
+                window.scrollTo(0, 0);
+                return false;
+            });
+        });
+    </script>
+    <script>
 
-        </script>
+        $('#up').click(function () {
+            $("section").toggle(500);
+        })
 
+    </script>
+    
 </body>
 
 </html>
