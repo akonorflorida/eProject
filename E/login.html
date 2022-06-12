@@ -21,42 +21,83 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        .noidung{
-            width: 100%;
-            margin-top: 297px;
+        
+        .form{
+           
             
-        }
-        .sup1{
-            position: relative;
-            width: 100%;
-            height: 790px;
-            float: left;
-            background: url(./hinhepro/3.22.jpg);
-            background-size: cover;
-        }
-        .end {
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            float: left;
             
+            margin: 0 auto;
+            border-radius: 9px;
+            
+            width: 778px;
+            height: 743px;
+            margin-top: 330px;
+            background: rgba(255, 248, 248, 0.6);
+            
+            border: 1px solid rgba(0, 0, 0, 0.6);
         }
-        .endd{
-            display: flex;
-            left:20%;
-            padding-top: 15px ;
-            width: 25%;
+        .form .textlogo1{
+            position: absolute;
+            width: 689px;
+            height: 125px;
+           text-align: center;
+            
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 120px;
             color: #ffffff;
-            float: left;
-            justify-content:space-around;
         }
-        .endd a{
-            font-size:50px;
-            color: #ffff
-        }
-        .endd a:hover{
+        .form input{
+            box-sizing: border-box;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            position: relative;
+            width: 687px;
+            height: 79px;
+            left: 45px;
+            top: 150px;
             
-            color: rgb(0, 255, 21);
-            text-decoration: none;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 15px;
+        }
+        .form button{
+            box-sizing: border-box;
+
+            position: relative;
+            width: 687px;
+            height: 79px;
+            left: 45px;
+            top: 150px;
+
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 15px;
+
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            color:#000000;
+            
+        }
+        .form button:hover{
+            background:green;
+            color: #fff;
+        }
+        .form .ps{
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            margin-top: 180px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
         }
         
     </style>
@@ -81,7 +122,7 @@
                 <a href="index.html">HOME</a>
                 <a href="tips.html">Tips</a>
                 <a href="tools.html">Tools</a>
-                <a href="decor.html">Decor</a>
+                <a href="">Decor</a>
                 <a href="abouts.html">Abouts</a>
             </div>
 
@@ -98,24 +139,25 @@
         </div>
         <div class="noidung">
             
+            <div class="form">
+                <div class="textlogo1">
+                    <span>G</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>N</span>
+                </div>
+                <input type="text" name="name" id="name" placeholder="   Name"><br><br>
+                <input type="email" name="email" id="email" placeholder="   Email address or phone number"><br><br>
+                <input type="password" name="password" id="password" placeholder="   Password"><br><br>
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="   Confirm Password"><br><br>
+                <button type="submit" id="submit">Confirm</button>
+                <p class="ps">Already have account?  <a href="">Login</a></p>
+            </div>
                 
         </div>
-        <div class="sup1">
-            <div>
-                <b>SUBSCRIBE</b>
-                <p>Subscribe with your gmail to receive news and updates</p>
-                <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
-                <button type="sub" id="sub">SIGN UP</button><br></div>
-                <textarea name="" id="" placeholder="       Comment"></textarea><br>
-                <button class="post" id="post">Post</button>
-            </div>
-        </div>
-        <div class="end">
-            <div class="endd"><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-            <div class="endd"><a href=""><i class="fa fa-youtube-play" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-            <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
-            <div class="endd"><a href="">in</a></div>
-        </div>
+        
         
 
         <section id="in">
