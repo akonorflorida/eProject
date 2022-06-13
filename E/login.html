@@ -99,6 +99,12 @@
             text-align: center;
             color: rgba(0, 0, 0, 0.6);
         }
+        input:invalid{
+            color:red;
+        }
+        input:valid{
+            color: rgb(0, 255, 64);
+        }
         
     </style>
 
@@ -148,11 +154,11 @@
                     <span>E</span>
                     <span>N</span>
                 </div>
-                <input type="text" name="name" id="name" placeholder="   Name"><br><br>
-                <input type="email" name="email" id="email" placeholder="   Email address or phone number"><br><br>
-                <input type="password" name="password" id="password" placeholder="   Password"><br><br>
-                <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="   Confirm Password"><br><br>
-                <button type="submit" id="submit">Confirm</button>
+                <input type="text" name="name" id="name" placeholder="   Name" pattern="^[a-zA-Z0-9]{8,20}$"><br><br>
+                <input type="email" name="email" id="email" placeholder="   Email address " pattern="^\w+@\w+\W\.[a-z]{2.3}$"><br><br>
+                <input type="password" name="password" id="password" placeholder="   Password" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[A-Z])(?=.*[^\w]).{8,20}$"><br><br>
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="   Confirm Password" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[A-Z])(?=.*[^\w]).{8,20}$"><br><br>
+                <button type="submit" id="submit" onclick="myFunction()">Confirm</button>
                 <p class="ps">Already have account?  <a href="">Login</a></p>
             </div>
                 
@@ -160,11 +166,11 @@
         
         
 
-        <section id="in">
-            <input id="email" type="text" placeholder="  Email"><br><br>
-            <input id="password" type="password" placeholder="  Password"><br><br>
-            <button type="submit" id="submit">Confirm</button><br><br>
-            <a href="login.html">Create New Accout</a>
+        <section id="in" class="form-login">
+            <input id="email" type="text" placeholder="  Email" ><br><br>
+            <input id="password" type="password" placeholder="  Password" ><br><br>
+            <button >Confirm</button><br><br>
+            <a href="#">Create New Accout</a>
         </section>
         
     </div>
@@ -208,6 +214,11 @@
             $("section").toggle(500);
         })
 
+    </script>
+    <script>
+        function myFunction() {
+        alert("Thank you for your feedback!"+ "\n" +"We will try to improve our website in the future!");
+        }
     </script>
     
 </body>
