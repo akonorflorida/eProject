@@ -7,6 +7,9 @@
   position: relative;
   
 }
+/* .container{
+  width: 80%;
+} */
 .column{
     float: left;
     width: 33%;
@@ -50,4 +53,7 @@ có chiều rộng dưới 600px */
   .column {
     width: 100%;
   }
+}
+.post{
+  margin-top: 100px;
 }
