@@ -1,12 +1,13 @@
 .container{
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 80%;
+    margin:0 auto ;
+    height: auto;
 
 }
 #frame{
     width: 250px;
     height: 330px;
-    background-image: url("./tooljpg/tool8.jpg");
+    background-image: url("./tooljpg/tool8.2.jpg");
     background-size: cover;
 }
 #tittle{
@@ -24,7 +25,7 @@
 }
 #sb1{
     position: relative;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 #sb2{
     position: relative;
@@ -46,7 +47,7 @@
     position: relative;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 280px;
+    margin-left: 0px;
     background-color: aquamarine;
     border-radius: 5px;
     padding: 8px;
@@ -55,7 +56,7 @@
     position: relative;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 400px;
+    margin-left: 0px;
     background-color: aquamarine;
     border-radius: 5px;
     padding: 8px;
@@ -78,6 +79,10 @@
     border-radius: 5px;
     padding: 8px;
     margin-left: -50px;
-    margin-top: 127px;
+    margin-top: 165px;
     font-weight: bold;
+}
+#vid{
+    float: left;
+    margin-top: 80px;
 }
