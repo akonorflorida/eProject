@@ -574,7 +574,7 @@ form button:hover {
     /* left: 1600px; */
     right: 40px;
     top: 297px;
-
+    display: none;
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid #000000;
 }
