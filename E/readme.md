@@ -1,1 +1,1 @@
-file:///C:/xampp/htdocs/eProject/E/index.html
+http://127.0.0.1:5500/eProject/E/index.html
