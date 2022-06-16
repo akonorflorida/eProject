@@ -3,74 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="HandhelFriendly" content="true"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>decor</title>
+    <title>Decor</title>
     <link rel="icon" href="./hinhepro/logopng.png">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="decor.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     
-
-    <!-- <script type="text/javascript" src="epro.js"></script> -->
-
-
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .noidung{
-            width: 100%;
-            margin-top: 297px;
-            
-        }
-        .sup1{
-            position: relative;
-            width: 100%;
-            height: 790px;
-            float: left;
-            background: url(./hinhepro/5.1.jpg);
-            background-size: cover;
-            margin-top: 50px;
-        }
-        .end {
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            float: left;
-            
-        }
-        .endd{
-            display: flex;
-            left:20%;
-            padding-top: 15px ;
-            width: 25%;
-            color: #ffffff;
-            float: left;
-            justify-content:space-around;
-        }
-        .endd a{
-            font-size:50px;
-            color: #ffff
-        }
-        .endd a:hover{
-            
-            color: rgb(0, 255, 21);
-            text-decoration: none;
-        }
-        
-                
-    </style>
-
-
 </head>
 
-<body>
-    <div id="wrapper">
+<style>
+    .noidung {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 197px;
+       
         
+    }
+    .sup1{
+        position: relative;
+        width: 100%;
+        height: 790px;
+        float: left;
+        background: url(./hinhepro/5.1.jpg);
+        background-size: cover;
+        
+    }
+    .end {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        float: left;
+        
+    }
+    .endd{
+        display: flex;
+        left:20%;
+        padding-top: 15px ;
+        width: 25%;
+        color: #ffffff;
+        float: left;
+        justify-content:space-around;
+    }
+    .endd a{
+        font-size:50px;
+        color: #ffff
+    }
+    .endd a:hover{
+        
+        color: rgb(0, 255, 21);
+        text-decoration: none;
+    }
+    
+            
+</style>
+
+<body>
+    <div class="container">
         <div id="logo">
             <div class="textlogo">
                 <span>G</span>
@@ -93,103 +83,62 @@
                         data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
                 <a class="a" href="#"><i id="up" class="glyphicon glyphicon-user"></i></a>
             </div>
-            <!-- <div class="responsive ">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div> -->   
-        </div>
+            <div id="mobile" class="responsive" >
+                <i id="mobile" class="fa fa-bars"></i>
+            </div>   
+       
+
+       
+
         <div class="noidung">
-            <body onload="onPageLoad()">
-                <div class="form" id="decor_container">
+            <!--main content-->
+        
+           
 
+                <div class="col-md-10">
+                    <div class="row" id="products">
+
+                        <div class="col-sm-6 col-md-4 divImage">
+                            <img src="./imghoa/hoahong1.jpg" alt="" class="flowerImage">
+                        </div>
+                    </div>
                 </div>
-                <script>
-                    var data = [
-                        { "id": "01", "name": "Red rose", "type": "rose", "price": 4999, "star": 5, "img": "hoahong1.jpg" },
-                        { "id": "02", "name": "Yellow rose", "type": "rose", "price": 5999, "star": 5, "img": "hoahongvang1.jpeg" },
-                        { "id": "03", "name": "pink rose", "type": "rose", "price": 4599, "star": 5, "img": "hoahonghong1.jpg" },
-                        { "id": "04", "name": "rose greend", "type": "rose", "price": 3599, "star": 5, "img": "hoahongxanh1.jpg" },
-                        { "id": "05", "name": "tree cau's yellow", "type": "ornamental ", "price": 8999, "star": 5, "img": "caycauvang1.jpg" },
-                        { "id": "06", "name": "porcelain tree", "type": "ornamental ", "price": 5599, "star": 5, "img": "caysudai1.jpg" },
-                        { "id": "07", "name": "pine tree", "type": "ornamental", "price": 3599, "star": 5, "img": "caytung1.png" },
-                        { "id": "08", "name": "Japanese palm tree", "type": "ornamental", "price": 7999, "star": 5, "img": "conhat1.webp" },
-                        { "id": "09", "name": "ornamental coconut tree", "type": "ornamental", "price": 1399, "star": 5, "img": "duacanh1.jpg" },
-                        { "id": "10", "name": "Fern", "type": "ornamental", "price": 9999, "star": 5, "img": "duongsi1.jpg" },
-                        { "id": "11", "name": "Sun Flower", "type": "sun", "price": 1099, "star": 5, "img": "hoahuongduong1.jpg" },
-                        { "id": "12", "name": "purple orchids", "type": "Orchid", "price": 1899, "star": 5, "img": "hoalan1.jpg" },
-                        { "id": "13", "name": "White orchids", "type": "Orchids", "price": 5999, "star": 5, "img": "hoalantrang1.jpg", },
-                        { "id": "14", "name": "yellow orchids", "type": "Orchids", "price": 4799, "star": 5, "img": "hoalanvang1.png" },
-                        { "id": "15", "name": "purple lotus ", "type": "lotus", "price": 5999, "star": 5, "img": "hoasen1.jpg" },
-                        { "id": "16", "name": "White Lotus", "type": "lotus", "price": 1099, "star": 5, "img": "hoasentrang1.jpg" },
-                        { "id": "17", "name": "Barringtonia acutangula", "type": "ornamental", "price": 7999, "star": 5, "img": "locvung1.jpg" },
-                        { "id": "18", "name": "tiger tongue tree", "type": "ornamental", "price": 9899, "star": 5, "img": "luho1.jpg" },
-                        { "id": "19", "name": "fortune tree", "type": "ornamental", "price": 9999, "star": 5, "img": "phattai1.jpg" },
-                        { "id": "20", "name": "stone lotus", "type": "lotus", "price": 1199, "star": 5, "img": "senda1.jpg" },
-                        { "id": "21", "name": "military bamboo tree", "type": "ornamental", "price": 1799, "star": 5, "img": "trucquantu1.jpg" },
-                    ];
-                    function getUrlVars() {
-                        var vars = {};
-                        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-                            function (m, key, value) {
-                                vars[key] = value;
-                            });
-                        return vars;
-                    }
-                    function onPageLoad() {
-                        var urlParams = getUrlVars();
-                        var type = urlParams["type"];
-                        if (type) {
-                            data = data.filter(x => x.type == type);
-                        }
-                        displayData();
-                    }
-
-                    function displayData() {
-                        var container = document.getElementById("decor_container");
-                        container.innerHTML = '';
-                        for (var i = 0; i < data.length; i++) {
-                            var childElement = buildItem(data[i]);
-                            container.appendChild(childElement);
-                        }
-                    }
-                    function buildItem(item) {
-                        var div = document.createElement("div");
-                        div.className = "pic";
-                        div.innerHTML = `<a href="decor information.html?id=${item.id}">
-                            <img src="imghoa/${item.img} ", alt="hinh13" class="img1" usemap="#mymap">
-                        <br>
-                        <span class="span1">
-                            <p>${item.name}</p>
-                        </span>
-                            </a>
-                        <span class="span2">${item.price}$</span> <br>
-                        <span class="span3">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </span>
-                        <p class="span4"><svg xmlns="http://www.w3.org/2000/svg" width="60px" height="50px" fill="currentColor"
-                                class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path
-                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                            </svg></p>`;
-                        return div;
-                    }
-
-                </script>
-            </body>
-                
+            
+            <!--end main content-->
+            
+            <!-- Modal cart-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <table class="show-cart table">
+                        
+                    </table>
+                    <h3>Total price: $<span class="total-cart"></span></h3>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
         </div>
+
+
+
         <div class="sup1">
             <div>
                 <b>SUBSCRIBE</b>
                 <p>Subscribe with your gmail to receive news and updates</p>
                 <div  class="email"><input type="text" class="email" id="email"  placeholder="        Email Address">  <br>
-                <button type="sub" id="sub">GET</button><br></div>
+                <button type="sub" id="sub">SIGN UP</button><br></div>
                 <textarea name="" id="" placeholder="       Comment"></textarea><br>
                 <button class="pot" id="post">Post</button>
             </div>
@@ -200,21 +149,30 @@
             <div class="endd"><a href=""><i class="fa fa-facebook-f" style="font-size:48px;color:rgb(255, 255, 255)"></i></a></div>
             <div class="endd"><a href="">in</a></div>
         </div>
+
+
         
 
-        <section id="in">
-            <input id="email" type="text" placeholder="  Email"><br><br>
-            <input id="password" type="password" placeholder="  Password"><br><br>
-            <button type="submit" id="submit">Confirm</button><br><br>
-            <a href="login.html">Create New Accout</a>
-        </section>
-        
     </div>
+    
+    
+
+    <section id="in">
+        <input id="email" type="text" placeholder="  Email"><br><br>
+        <input id="password" type="password" placeholder="  Password"><br><br>
+        <button type="submit" id="submit">Confirm</button><br><br>
+        <a href="login.html">Create New Accout</a>
+    </section>
+    
     
     <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
     <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
 
-    <script src="epro.js"></script>
+    <script src="./js/epro.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/cart.js"></script>
 
     <!-- backtop -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -251,7 +209,23 @@
         })
 
     </script>
-    
+    <script>
+        // mobile
+        var menu =document.getElementById('menu');
+        var mobile =document.getElementById('mobile');
+        var menuHeight = menu.clientHeight;
+        mobile.onclick = function() {
+            console.log(menu.clientHeight);
+            var isClosed = menu.clientHeight  === menuHeight;
+            if (isClosed) {
+                menu.style.height = 'auto';
+            }else {
+                menu.style.height = null;
+            }
+        }
+    </script>
+
 </body>
+
 
 </html>

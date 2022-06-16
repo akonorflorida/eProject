@@ -10,20 +10,17 @@
     <link rel="icon" href="./hinhepro/logopng.png">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
     <!-- <script type="text/javascript" src="epro.js"></script> -->
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         .noidung{
             width: 100%;
-            margin-top: 297px;
+            margin-top: 267px;
             
         }
         
@@ -146,11 +143,9 @@
                         data-target="#cart"><b><span class="total-count badge cart-badge"></span></b></i></a>
                 <a class="a" href="#"><i id="up" class="glyphicon glyphicon-user"></i></a>
             </div>
-            <!-- <div class="responsive ">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div> -->   
+            <div id="mobile" class="responsive" >
+                <i id="mobile" class="fa fa-bars"></i>
+            </div>   
         </div>
         <div class="noidung">
             <div class="tt">
@@ -192,8 +187,33 @@
     
     <div id="backtop"><img src="./hinhepro/up.png" alt=""></div>
     <!-- <footer class="and1"><canvas width='1920px' height="310px"></canvas></footer> -->
+    <!-- Modal cart-->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <table class="show-cart table">
+                
+            </table>
+            <h3>Total price: $<span class="total-cart"></span></h3>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Order now</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/product.js"></script>
+        <script src="./js/cart.js"></script>
 
-    <script src="epro.js"></script>
+    <script src="./js/epro.js"></script>
 
     <!-- backtop -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -229,6 +249,21 @@
             $("section").toggle(500);
         })
 
+    </script>
+    <script>
+        // mobile
+        var menu =document.getElementById('menu');
+        var mobile =document.getElementById('mobile');
+        var menuHeight = menu.clientHeight;
+        mobile.onclick = function() {
+            console.log(menu.clientHeight);
+            var isClosed = menu.clientHeight  === menuHeight;
+            if (isClosed) {
+                menu.style.height = 'auto';
+            }else {
+                menu.style.height = null;
+            }
+        }
     </script>
     
 </body>

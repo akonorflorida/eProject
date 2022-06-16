@@ -1,0 +1,252 @@
+/* DECOR */
+.form {
+    width: 90%;
+    margin: 0 auto;
+    border: black 1px solid;
+}
+
+.form1andform {
+    margin-left: 70px;
+   
+}
+
+.pic {
+
+    float: left;
+    margin-top: 36px;
+}
+
+.pic1 {
+    margin-left: 100px;
+
+
+}
+
+.pic2 {
+    margin-left: 20px;
+}
+
+.pic3 {
+    margin-left: 20px;
+}
+
+.img1 {
+    width: 560px;
+    height: 528px;
+}
+
+.span1 {
+
+    font-size: 23px;
+    font-family: Helvetica;
+
+    list-style: none;
+}
+
+.span1 p a {
+    text-decoration: none;
+
+
+    color: black;
+}
+
+.span2 {
+    font-size: 27px;
+    font-family: Helvetica;
+    margin: 0 auto;
+}
+
+.span3 {
+    font-size: 50px;
+
+
+}
+
+.span4 {
+
+    margin-top: -100px;
+    margin-left: 480px;
+}
+
+.img3 {
+    float: left;
+    margin-right: 40px;
+    width: 388px;
+    height: 532px;
+}
+
+.checked {
+    color: rgb(243, 231, 12);
+}
+
+/* DECOR INFORMATION */
+.form2 {
+    width: 220px;
+    border: black 1px solid;
+    margin: 0 auto;
+}
+
+#decor_information {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Arial;
+}
+
+.chu {
+    font-size: 25px;
+    font-family: Helvetica;
+
+}
+
+.kicon {
+    width: 83px;
+    height: 90px;
+}
+
+#sb1 {
+    position: relative;
+    margin-top: 270px;
+}
+
+#sb2 {
+    position: relative;
+    margin-top: -93px;
+    margin-left: 90px;
+}
+
+#sb3 {
+    position: relative;
+    margin-top: -93px;
+    margin-left: 190px;
+}
+
+.chu2 {
+    position: relative;
+    margin-top: -65px;
+    margin-left: 430px;
+    font-size: 30px;
+}
+
+.p1 {
+    position: relative;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.p2 {
+    font-family: Helvetica;
+    font-size: 40px;
+    margin-left: 430px;
+    margin-top: -100px;
+}
+
+
+.add {
+    width: 140px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(15, 154, 15);
+    margin-left: 1073px;
+
+}
+
+.p3 {
+    margin-top: -100px;
+}
+
+.chu3 {
+
+    margin-top: -50px;
+    margin-left: 380px;
+    font-size: 40px;
+    font-family: Helvetica;
+}
+
+.comment {
+    width: 1213px;
+    height: 250px;
+}
+
+.send {
+    width: 140px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(15, 154, 15);
+    margin-left: 1073px;
+
+}
+
+.smsend {
+    margin-top: -78px;
+}
+
+
+
+/* DECOR5 */
+.hero-img {
+    background-image: url(hinh4.jpg);
+    background-size: cover;
+    height: 790px;
+    width: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-family: Helvetica;
+
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: Helvetica;
+
+}
+
+.cmt {
+    margin-right: 450px;
+}
+
+#em {
+    margin-left: 700px;
+    width: 300px;
+    height: 30px;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.sup {
+    background-color: rgb(19, 141, 27);
+    border: thin;
+    color: aliceblue;
+    padding: 7px 15px;
+    margin-left: 30px;
+    height: 40px;
+    width: 150px;
+}
+
+.text {
+    margin-left: 700px;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.post {
+    margin-left: 1070px;
+    background-color: rgb(8, 11, 8);
+    color: aliceblue;
+    border: thin;
+    border-radius: 5px;
+    padding: 7px 15px;
+}

@@ -1,0 +1,59 @@
+
+.noidung{
+  background-image: url(/eProject/E/hinhepro/);
+}
+.row{
+  text-align:center;
+  position: relative;
+  
+}
+/* .container{
+  width: 80%;
+} */
+.column{
+    float: left;
+    width: 33%;
+    border: solid;
+    border-width: 10%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 100%;
+  }
+  
+/* Stops the float property from affecting content after the columns */
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#pname{
+  position: relative;
+  margin-top:150px;
+}
+#price{
+  display: inline-block;
+  border: solid thin;
+  border-radius: 8%;
+  background-color: aquamarine;
+  /* position: relative; */
+  float: right;
+  /* margin-top: -100px;*/
+  /* margin-left: 230px; */
+  padding: 4px 10px;
+  position: sticky;
+  vertical-align: bottom;
+}
+
+/* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+có chiều rộng dưới 600px */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.post{
+  margin-top: 100px;
+}

@@ -1,0 +1,41 @@
+.flowerImage {
+    width: 300px;
+    height: 250px;
+    
+    border: solid rgb(155, 245, 155) medium;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.divImage {
+    text-align: center;
+
+    margin: 0.5rem 0rem;
+}
+
+.v-menu {
+    border: rgb(128, 128, 128) solid medium;
+    padding: 1rem;
+}
+
+.navbar-inverse {
+    background-color: rgb(21, 255, 0);
+}
+
+p{
+    font-size: 20px;
+}
+
+.cart-icon{
+    position: relative;
+    
+}
+
+.cart-badge{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background-color:rgb(50, 255, 60);
+    font-size: 15px;
+}
